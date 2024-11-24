@@ -1,9 +1,12 @@
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: 'Old Standard TT';
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -14,14 +17,34 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     height: 100%;
     width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.left #attribution{
+.left > div {
+    font-size: 4vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    position: absolute;
-    bottom: 0;
+    margin-top: 30vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.left .attribution{
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left .attribution a {
+    color: white;
 }
 
 .right {
@@ -32,21 +55,28 @@ body {
 }
 
 .thirds {
-    padding: 64px;
+    padding-left: 64px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.thirds h2 {
+    font-size: 36px;
+}
 
 .thirds.middle {
     background-color: #f9fafb;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
-/*                0px -5px 5px rgba(0, 0, 0, 0.123); */
     z-index: 1;
 }
 
 .thirds.top,
 .thirds.bottom {
     background-color: #fcf8f2;
+    gap: 12px;
+    font-size: 24px;
 }
 
 
@@ -55,7 +85,13 @@ body {
     flex-wrap: wrap;
     max-width: 760px;
     gap: 16px;
+    font-size: 16px;
 
+}
+
+.thirds h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
 }
 
 .thirds form > div {
@@ -68,6 +104,8 @@ body {
 .thirds.middle input {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
+    height: 24px;
+    min-width: 300px;
 
 }
 
@@ -80,4 +118,5 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    max-width: 200px;
 }
