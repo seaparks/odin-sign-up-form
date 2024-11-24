@@ -8,39 +8,53 @@
 </head>
 <body>
     <div class="left">
-        Photo by <a href="https://unsplash.com/@providence?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Providence Doucet</a>
-        on <a href="https://unsplash.com/photos/brown-and-black-violin-wPaBwop_rSo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <p id="attribution">Photo by <a href="https://unsplash.com/@providence?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Providence Doucet</a>
+        on <a href="https://unsplash.com/photos/brown-and-black-violin-wPaBwop_rSo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
     </div>
     <div class="right">
-        <div class="thirds">This is not a real online service, but it may be someday.
-            Sign up now to get personalized classical music recommendations.
-            Perfect for new listeners and long-time fans alike.
+        <div class="thirds top"><h2>This is not a real online service, but it may be someday.</h2>
+            <p>Sign up now to get personalized classical music recommendations.
+            Perfect for new listeners and long-time fans alike.</p>
         </div>
-        <div class="thirds">
-            Let's do this!
+        <div class="thirds middle">
+            <h3>Let's do this!</h3>
             <form action="" method="post" id="sign-up-form">
-                <label for="first-name">FIRST NAME</label>
-                <input id="first-name" name="first-name" type="text" />
-
-                <label for="last-name">LAST NAME</label>
-                <input id="last-name" name="last-name" type="text" />
-
-                <label for="email">EMAIL</label>
-                <input id="email" name="email" type="email" />
-
-                <label for="phone">PHONE NUMBER</label>
-                <input id="phone" name="phone" type="tel" /> 
-
-                <label for="pwd">PASSWORD</label>
-                <input id="pwd" name="pwd" type="password" />
                 
-                <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                <input id="confirm-pwd" name="confirm-pwd" type="password" />
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input id="first-name" name="first-name" type="text" />
+                </div>
+                
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input id="last-name" name="last-name" type="text" />
+                </div>
+
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" />
+                </div>
+
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input id="phone" name="phone" type="tel" /> 
+                </div>
+
+                <div>
+                    <label for="pwd">PASSWORD</label>
+                    <input id="pwd" name="pwd" type="password" />
+                </div>
+
+                <div>
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input id="confirm-pwd" name="confirm-pwd" type="password" />
+                </div>
+
             </form>
         </div>
-        <div class="thirds">
+        <div class="thirds bottom">
             <button type="submit" form="sign-up-form">Create Account</button>
-            Already have an account? Log in
+            <p>Already have an account? Log in</p>
         </div>
     </div>
 </body>
